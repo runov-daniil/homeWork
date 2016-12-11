@@ -38,5 +38,16 @@ public class Main {
         for(int i = 0; i < 5; i++){
             System.out.print(a[i] + "\t");
         }
+        for(int i = 0; i < 2; i++){
+            int buffer = a[i];
+            a[i] = a[4 - i];
+            a[4 - i] = buffer;
+        }
+        System.out.println("Массив перевернут!");
+        for(int i = 0; i < 5; i++){
+            System.out.print(a[i] + "\t");
+        }
+        System.out.println("Работа модуля завершена!");
+        System.out.println("________________________");
     }
 }
