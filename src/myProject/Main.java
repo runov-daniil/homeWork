@@ -10,11 +10,15 @@ public class Main {
         while(True == 0) {
             System.out.println("Введите номер команды:");
             System.out.println("1: Переворот массива;");
+            System.out.println("2: Нахождение среднего значения массива, максимума и минимума;");
             System.out.println("0: Выход из программы.");
             int cmd = scanner.nextInt();
             switch (cmd){
                 case 1:
                     reversMass();
+                    break;
+                case 2:
+                    srZnachMaxMin();
                     break;
                 case 0:
                     System.out.println("Работа программы завершена");
@@ -49,5 +53,9 @@ public class Main {
         }
         System.out.println("Работа модуля завершена!");
         System.out.println("________________________");
+    }
+
+    private static void srZnachMaxMin(){
+        System.out.println("Модуль в разработке!");
     }
 }
